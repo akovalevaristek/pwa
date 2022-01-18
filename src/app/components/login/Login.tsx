@@ -15,7 +15,7 @@ import { Link } from "./Link";
 import { LoginForm } from "./LoginForm";
 import { Logo } from "./Logo";
 
-const Login = () => (
+const Login: React.FC<{ setIsLogin: any }> = ({ setIsLogin }) => (
   <Box
     bg={useColorModeValue("gray.50", "inherit")}
     minH="100vh"
@@ -32,7 +32,7 @@ const Login = () => (
         <Link href="#">Start free trial</Link>
       </Text>
       <Card>
-        <LoginForm />
+        <LoginForm setIsLogin={setIsLogin} />
         <DividerWithText mt="6">or continue with</DividerWithText>
         <SimpleGrid mt="6" columns={3} spacing="3">
           <Button color="currentColor" variant="outline">
