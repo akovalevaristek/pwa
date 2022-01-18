@@ -6,8 +6,8 @@ import {
   Spacer,
   Stack,
   useColorModeValue as mode,
-} from '@chakra-ui/react'
-import * as React from 'react'
+} from "@chakra-ui/react";
+import * as React from "react";
 import {
   FaRegBell,
   FaRegChartBar,
@@ -15,16 +15,15 @@ import {
   FaRegHeart,
   FaRegImages,
   FaRegQuestionCircle,
-} from 'react-icons/fa'
-import { Logo } from './Logo'
-import { NavLink } from './NavLink'
-import { SearchField } from './SearchField'
-import { UserProfile } from './UserProfile'
+} from "react-icons/fa";
+import { Logo } from "./Logo";
+import { NavLink } from "./NavLink";
+import { UserProfile } from "./UserProfile";
 
 export const Sidebar = (props: FlexProps) => {
   return (
     <Flex
-      bg={mode('gray.50', 'gray.800')}
+      bg={mode("gray.50", "gray.800")}
       direction="column"
       borderRightWidth="1px"
       width="64"
@@ -32,11 +31,7 @@ export const Sidebar = (props: FlexProps) => {
     >
       <Flex direction="column" flex="1" pt="5" pb="4" overflowY="auto" px="4">
         <Box mb="6">
-          <Logo color={mode('blue.600', 'blue.400')} h="6" />
-        </Box>
-
-        <Box mb="6">
-          <SearchField />
+          <Logo color={mode("blue.600", "blue.400")} h="6" />
         </Box>
 
         <Stack spacing="6" as="nav" aria-label="Sidebar Navigation">
@@ -63,5 +58,5 @@ export const Sidebar = (props: FlexProps) => {
         email="cindy@example.com"
       />
     </Flex>
-  )
-}
+  );
+};
